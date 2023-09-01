@@ -11,9 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\BL_MeterCheckModels\BL_MeterCheckModels.csproj" />
-    <ProjectReference Include="..\..\BL_MeterCheck_DataAccess\BL_MeterCheck_DataAccess.csproj" />
+    <ProjectReference Include="..\BL_MeterCheckModels\BL_MeterCheckModels.csproj" />
     <ProjectReference Include="..\BL_MeterCheck_Business\BL_MeterCheck_Business.csproj" />
+    <ProjectReference Include="..\BL_MeterCheck_DataAccess\BL_MeterCheck_DataAccess.csproj" />
   </ItemGroup>
 
 </Project>
