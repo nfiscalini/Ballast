@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.15" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\BL_MeterCheckModels\BL_MeterCheckModels.csproj" />
+    <ProjectReference Include="..\..\BL_MeterCheck_DataAccess\BL_MeterCheck_DataAccess.csproj" />
+    <ProjectReference Include="..\BL_MeterCheck_Business\BL_MeterCheck_Business.csproj" />
+  </ItemGroup>
+
+</Project>
