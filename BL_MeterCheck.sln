@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BL_MeterCheck_DataAccess", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BL_MeterCheckModels", "BL_MeterCheckModels\BL_MeterCheckModels.csproj", "{3EBB56F1-6C38-4D04-8F75-FA5670E9EA00}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BL_MeterCheck_Services", "BL_services\BL_MeterCheck_Services.csproj", "{FE83E032-7675-4B38-8FB8-6184B7301D71}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{3EBB56F1-6C38-4D04-8F75-FA5670E9EA00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3EBB56F1-6C38-4D04-8F75-FA5670E9EA00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3EBB56F1-6C38-4D04-8F75-FA5670E9EA00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE83E032-7675-4B38-8FB8-6184B7301D71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE83E032-7675-4B38-8FB8-6184B7301D71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE83E032-7675-4B38-8FB8-6184B7301D71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE83E032-7675-4B38-8FB8-6184B7301D71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

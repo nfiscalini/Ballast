@@ -35,7 +35,7 @@ namespace BL_MeterCheck_Business
                 if (data != null && data.Tables.Count > 0)
                 {
                     DataTable dataTable = data.Tables[0];
-                    responseModel = new ResponseModel<int>(Convert.ToInt32(dataTable.Rows[0][0]));
+                    responseModel = new ResponseModel<int>(Convert.ToInt32(dataTable.Rows[0][0]), "OK");
                 }
 
                 return responseModel;
@@ -61,7 +61,7 @@ namespace BL_MeterCheck_Business
                 if (data != null && data.Tables.Count > 0)
                 {
                     DataTable dataTable = data.Tables[0];
-                    responseModel = new ResponseModel<int>(Convert.ToInt32(dataTable.Rows[0][0]));
+                    responseModel = new ResponseModel<int>(Convert.ToInt32(dataTable.Rows[0][0]), "OK");
                 }
 
                 return responseModel;
@@ -89,7 +89,7 @@ namespace BL_MeterCheck_Business
                 if (data != null && data.Tables.Count > 0)
                 {
                     DataTable dataTable = data.Tables[0];
-                    responseModel = new ResponseModel<IList<MeterCheckModel>>(dataTable.ToList<MeterCheckModel>());
+                    responseModel = new ResponseModel<IList<MeterCheckModel>>(dataTable.ToList<MeterCheckModel>(), "OK");
                 }
 
                 return responseModel;
@@ -116,7 +116,7 @@ namespace BL_MeterCheck_Business
                 if (data != null && data.Tables.Count > 0)
                 {
                     DataTable dataTable = data.Tables[0];
-                    responseModel = new ResponseModel<int>(Convert.ToInt32(dataTable.Rows[0][0]));
+                    responseModel = new ResponseModel<int>(Convert.ToInt32(dataTable.Rows[0][0]), "OK");
                 }
 
                 return responseModel;

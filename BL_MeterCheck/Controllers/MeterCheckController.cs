@@ -24,6 +24,11 @@ namespace BL_MeterCheck_API.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
+            if(Response.StatusCode != 200) 
+            {
+                return Enumerable.Empty<string>();
+            }
+
             return new string[] { "value1", "value2" };
         }
 
@@ -39,6 +44,11 @@ namespace BL_MeterCheck_API.Controllers
         [HttpPost]
         public async Task<ResponseModel<int>> PostAsync([FromBody] MeterCheckModel model)
         {
+            if (Response.StatusCode != 200)
+            {
+                return new ResponseModel<int>(-1);
+            }
+
             ResponseModel<int> responseModel = await _meterCheck.AddCheck(model);
             return responseModel;
         }
@@ -47,6 +57,11 @@ namespace BL_MeterCheck_API.Controllers
         [HttpPut("{id}")]
         public async Task<ResponseModel<int>> PutAsync(int id, [FromBody] MeterCheckModel model)
         {
+            if (Response.StatusCode != 200)
+            {
+                return new ResponseModel<int>(-1);
+            }
+
             ResponseModel<int> responseModel = await _meterCheck.UpdateCheck(id, model);
             return responseModel;
         }
@@ -55,6 +70,11 @@ namespace BL_MeterCheck_API.Controllers
         [HttpDelete("{id}")]
         public async Task<ResponseModel<int>> DeleteAsync(int id)
         {
+            if (Response.StatusCode != 200)
+            {
+                return new ResponseModel<int>(-1);
+            }
+
             ResponseModel<int> responseModel = await _meterCheck.DeleteCheck(id);
             return responseModel;
         }

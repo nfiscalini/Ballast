@@ -5,10 +5,10 @@
         public T Data { get; set; }
         public string Message { get; set; }
 
-        public ResponseModel(T data)
+        public ResponseModel(T data, string message = "")
         {
             Data = data;
-            Message = string.Empty;
+            Message = message;
         }
     }
 }
